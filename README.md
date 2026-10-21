@@ -1,6 +1,8 @@
-# Madebywimu — Email Development Portfolio
+# Darshaka Lanka — Email Development Portfolio
 
 A production-quality freelance email development portfolio built for Upwork clients and direct prospects. Demonstrates MJML marketing emails, HTML email signatures, and email-client-conscious implementation skills.
+
+Main portfolio: [darshaka-lanka.pages.dev](https://darshaka-lanka.pages.dev/)
 
 ---
 

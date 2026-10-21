@@ -1,9 +1,9 @@
 {
-  "name": "madebywimu-portfolio",
+  "name": "darshaka-lanka-emails",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Madebywimu — Freelance Email Developer Portfolio",
+  "description": "Darshaka Lanka — Freelance Email Developer Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "yarn build:emails && tsc -b && vite build",

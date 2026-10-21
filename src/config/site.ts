@@ -1,24 +1,26 @@
 // src/config/site.ts
 // ─────────────────────────────────────────────────────────────────
-// Central configuration for Madebywimu portfolio.
+// Central configuration for Darshaka Lanka portfolio.
 // Update contact details, social links, and URLs here.
 // ─────────────────────────────────────────────────────────────────
 
 export const siteConfig = {
   brand: {
     name: "Darshaka Lanka",
+    role: "Senior Frontend & Email Developer",
     tagline: "Email experiences built for the inbox.",
     description:
       "Freelance email developer specialising in MJML, responsive HTML emails, " +
       "email signatures, and pixel-perfect design-to-HTML implementation.",
+    mainPortfolio: "https://darshaka-lanka.pages.dev/",
   },
 
   contact: {
-    email: "dwlanka.pro@gmail.com", // Replace with your real address
-    upwork: "https://www.upwork.com/freelancers/~01ec7a2813e79f8a68", // Replace
-    github: "https://github.com/Dlanka", // Replace
-    twitter: "https://twitter.com/Dlanka", // Replace
-    linkedin: "https://www.linkedin.com/in/darshaka-lanka-2150b8102", // Replace
+    email: "dwlanka.pro@gmail.com",
+    mainPortfolio: "https://darshaka-lanka.pages.dev/",
+    upwork: "https://www.upwork.com/freelancers/~01ec7a2813e79f8a68",
+    github: "https://github.com/Dlanka",
+    linkedin: "https://www.linkedin.com/in/darshaka-lanka-2150b8102",
   },
 
   projects: [

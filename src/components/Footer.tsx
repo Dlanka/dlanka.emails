@@ -7,13 +7,21 @@ export function Footer() {
       <div className="max-w-5xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
           <p className="font-bold text-white">
-            <span className="text-violet-400">✦</span> Madebywimu
+            <span className="text-violet-400">✦</span> Darshaka Lanka
           </p>
           <p className="text-slate-500 text-sm mt-1">
-            Freelance Email Developer
+            Senior Frontend &amp; Email Developer
           </p>
         </div>
         <div className="flex items-center gap-6 text-sm text-slate-500">
+          <a
+            href={siteConfig.contact.mainPortfolio}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-300 transition-colors"
+          >
+            Main Portfolio ↗
+          </a>
           <a
             href={siteConfig.contact.github}
             target="_blank"
@@ -32,7 +40,7 @@ export function Footer() {
           </a>
         </div>
         <p className="text-slate-600 text-xs">
-          © {year} Madebywimu. All samples are fictional demo work.
+          © {year} Darshaka Lanka. All samples are fictional demo work.
         </p>
       </div>
     </footer>

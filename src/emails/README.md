@@ -1,4 +1,4 @@
-# Email Sources — Madebywimu Portfolio
+# Email Sources — Darshaka Lanka Portfolio
 
 This directory contains MJML source files for the marketing email samples.
 

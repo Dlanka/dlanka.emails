@@ -21,7 +21,7 @@ const checks = [
       'OrbitFlow',
       'Start Free',
       'Unsubscribe',
-      'Madebywimu',
+      'Darshaka Lanka',
     ],
     minBytes: 10000,
   },

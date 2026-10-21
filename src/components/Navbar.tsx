@@ -9,9 +9,17 @@ export function Navbar() {
           to="/"
           className="font-bold text-lg tracking-tight text-white hover:text-violet-300 transition-colors"
         >
-          <span className="text-violet-400">✦</span> Madebywimu
+          <span className="text-violet-400">✦</span> Darshaka Lanka
         </Link>
         <div className="flex items-center gap-6">
+          <a
+            href={siteConfig.contact.mainPortfolio}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-300 bg-cyan-950/60 border border-cyan-700/40 px-3 py-1.5 rounded-lg hover:bg-cyan-900/60 transition-colors"
+          >
+            Main Portfolio ↗
+          </a>
           <a
             href="/#projects"
             className="text-sm text-slate-400 hover:text-white transition-colors"
