@@ -10,7 +10,7 @@ Instagram (studio):   https://instagram.com/northstarstudio
 Instagram (personal): https://instagram.com/alexrivera.design
 ──────────────────────────────────────────────────
 ★ Now taking new client projects for Q1 2027
-  Book a discovery call: https://northstarstudio.example/contact
+  Book a discovery call: https://northstarstudio.example
 ──────────────────────────────────────────────────
 CONFIDENTIALITY NOTICE: This email and any attachments are for
 the sole use of the intended recipient(s) and may contain
@@ -19,4 +19,3 @@ please notify the sender immediately and delete all copies.
 Northstar Studio is a fictional company created for portfolio
 demonstration purposes only. All contact details are placeholders.
 ──────────────────────────────────────────────────
-

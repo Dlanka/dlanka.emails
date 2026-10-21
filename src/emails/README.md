@@ -55,20 +55,17 @@ All company details, testimonials, and pricing are invented and not based on any
 
 ## Email Client Testing Status
 
-> **None of the below clients have been tested.** Do not rely on browser preview as proof of
-> rendering in any of these clients.
+> **Testing status for OrbitFlow Marketing Email:** Browser preview only. Live inbox send tests are pending via Litmus, Email on Acid, or Putsmail.
 
-| Client | Status |
-|--------|--------|
-| Gmail (Chrome, desktop) | ⬜ Not tested |
-| Gmail (iOS, mobile) | ⬜ Not tested |
-| Gmail (Android, mobile) | ⬜ Not tested |
-| Outlook 2019 (Windows) | ⬜ Not tested |
-| Outlook 2021 (Windows) | ⬜ Not tested |
-| Outlook on the web | ⬜ Not tested |
-| Apple Mail (macOS) | ⬜ Not tested |
-| Apple Mail (iOS) | ⬜ Not tested |
-| Yahoo Mail | ⬜ Not tested |
+| Client | Status | Notes |
+|--------|--------|-------|
+| Gmail (Chrome, desktop) | ⬜ Pending live send | Inlined styles & table structure designed for Gmail compatibility. |
+| Gmail (iOS app) | ⬜ Pending live send | `mj-group` keeps feature icons alongside text on mobile. |
+| Gmail (Android app) | ⬜ Pending live send | Single column responsive wrapper. |
+| Outlook 2019 / 2021 (Windows) | ⬜ Pending live send | Word engine fallback: MSO table rules, solid background fallbacks. |
+| Outlook on the web (OWA) | ⬜ Pending live send | Standard modern rendering. |
+| Apple Mail (macOS & iOS) | ⬜ Pending live send | Full webfont and HTML5 support. |
+| Yahoo Mail | ⬜ Pending live send | Standard desktop & mobile web rendering. |
 
-To test, use a service such as [Litmus](https://litmus.com) or [Email on Acid](https://www.emailonacid.com).
+To execute test sends, see the instructions in the root `README.md`.
 

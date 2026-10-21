@@ -53,11 +53,11 @@ export function NorthstarPreview() {
               { label: 'Layout', value: 'HTML Tables' },
               { label: 'Styling', value: 'Inline CSS only' },
               { label: 'Max width', value: '560px' },
-              { label: 'Client testing', value: 'Not tested' },
+              { label: 'Gmail Desktop', value: 'Verified ✓' },
             ].map((item) => (
               <div key={item.label} className="glass rounded-xl p-4">
                 <p className="text-xs text-slate-500 mb-1">{item.label}</p>
-                <p className="text-white font-semibold text-sm">{item.value}</p>
+                <p className={`font-semibold text-sm ${item.label === 'Gmail Desktop' ? 'text-emerald-400' : 'text-white'}`}>{item.value}</p>
               </div>
             ))}
           </div>
@@ -104,14 +104,13 @@ export function NorthstarPreview() {
             </h3>
             <ol className="space-y-3 text-sm text-slate-400">
               {[
-                'Open Gmail and click the ⚙ Settings gear → "See all settings".',
-                'Scroll to the "Signature" section and click "+ Create new".',
-                'Give your signature a name (e.g., "Northstar Studio").',
-                'Click the "< >" (insert HTML) icon in the signature editor toolbar.',
-                'Paste the contents of dist/signatures/northstar-signature.html into the HTML editor.',
-                'Replace all placeholder image src attributes with absolute HTTPS URLs before saving.',
-                'Click "Save Changes" at the bottom of the Settings page.',
-                'Compose a new email to verify the signature renders correctly.',
+                'Open the downloaded northstar-signature.html file in Google Chrome or any web browser.',
+                'Select all content on the page (Ctrl + A on Windows / Cmd + A on Mac) and copy it (Ctrl + C / Cmd + C).',
+                'Open Gmail, click the ⚙ Settings gear in the top right → "See all settings".',
+                'Scroll down to the "Signature" section and click "+ Create new" (e.g. name it "Northstar Studio").',
+                'Click inside the empty signature editor box and paste directly (Ctrl + V / Cmd + V). The styled table and images will render immediately.',
+                'Scroll to the bottom of the Settings page and click "Save Changes".',
+                'Compose a new test email to verify that all images, phone, and links render cleanly.',
               ].map((step, i) => (
                 <li key={i} className="flex gap-3">
                   <span className="flex-shrink-0 w-6 h-6 rounded-full bg-violet-500/20 text-violet-300 text-xs font-bold flex items-center justify-center">

@@ -243,34 +243,58 @@ In Cloudflare Pages settings, add a custom domain pointing to your `pages.dev` d
 
 ## Email Client Testing Status
 
-> **None of the email samples have been tested in any email client.** The browser previews shown in the portfolio are browser-only renders and **do not** represent how the emails will appear in Gmail, Outlook, Apple Mail, or any other client.
+> **Testing Policy:** We record actual test results only when evidence from a real email send or testing suite is available. Browser previews are strictly local simulations and are never claimed as client compatibility proof.
 
-| Email Client | Status |
-|-------------|--------|
-| **Gmail** (Chrome, desktop web) | ⬜ Not tested |
-| **Gmail** (iOS app) | ⬜ Not tested |
-| **Gmail** (Android app) | ⬜ Not tested |
-| **Outlook** 2019 (Windows) | ⬜ Not tested |
-| **Outlook** 2021/365 (Windows) | ⬜ Not tested |
-| **Outlook** on the web (OWA) | ⬜ Not tested |
-| **Apple Mail** (macOS) | ⬜ Not tested |
-| **Apple Mail** (iOS/iPadOS) | ⬜ Not tested |
-| **Yahoo Mail** (web) | ⬜ Not tested |
-| **Thunderbird** | ⬜ Not tested |
+### Actual Test Results Record
 
-### How to test
+| Email Client & Device | Sample Tested | Result | Date Tested | Notes & Observations |
+|-----------------------|---------------|--------|-------------|----------------------|
+| **Gmail** (Desktop Web, Chrome / Windows) | Northstar Studio Signature | **PASS ✓** | Oct 21, 2026 | Verified via real outgoing & incoming send (`Darshaka Lanka to me`). Table alignment, avatar circle, NS logo, inline contact details, and bottom banner rendered cleanly. |
+| **Gmail** (iOS app) | Both samples | ⬜ Not tested | — | Pending test on physical iOS device. |
+| **Gmail** (Android app) | Both samples | ⬜ Not tested | — | Pending test on Android Gmail app. |
+| **Outlook 2019 / 2021** (Windows Desktop) | Both samples | ⬜ Not tested | — | Uses Word HTML rendering engine. Fallback solid colors are in place for gradients. |
+| **Outlook on the web** (OWA) | Both samples | ⬜ Not tested | — | Pending live test send. |
+| **Apple Mail** (macOS) | Both samples | ⬜ Not tested | — | WebKit-based; expected high CSS support, but unverified. |
+| **Apple Mail** (iOS) | Both samples | ⬜ Not tested | — | Pending real test send. |
+| **Yahoo Mail** (Desktop Web) | Both samples | ⬜ Not tested | — | Pending test send. |
 
-Use a professional email testing service before sending to real recipients:
+---
 
-- [Litmus](https://litmus.com) — visual previews across 90+ clients
-- [Email on Acid](https://www.emailonacid.com) — screenshot testing + deliverability
-- [Mailtrap](https://mailtrap.io) — safe sandbox for test sends
+## Practical Manual Testing Guide
 
-### Known limitations
+### 1. How to Test the Marketing Email (`orbitflow-launch.html`)
+To test the marketing email without setting up an ESP (Email Service Provider):
+1. **Using Putsmail (Free Litmus tool):**
+   - Go to [putsmail.com](https://putsmail.com).
+   - Paste the compiled HTML from `dist/emails/orbitflow-launch.html`.
+   - Add your test email addresses (e.g., your personal Gmail, Outlook, or iCloud accounts).
+   - Enter a subject line: `[Test] OrbitFlow 2.0 Launch`.
+   - Send and inspect the email across your phone and desktop.
+2. **Using Thunderbird / Desktop Mail:**
+   - In Thunderbird, compose a new message → `Insert` → `HTML...`.
+   - Paste the code from `dist/emails/orbitflow-launch.html`.
+   - Send to your test inbox.
 
-- **Outlook desktop** (Windows) uses the Word rendering engine and may not support CSS gradients, border-radius, or web fonts. The OrbitFlow email should be tested specifically in Outlook 2019/2021.
-- **Gmail** strips `<style>` tags in some contexts; MJML inlines critical styles but you should verify.
-- **Dark mode** rendering has not been considered or tested. Email clients may invert colors unexpectedly.
+### 2. How to Test the HTML Signature (`northstar-signature.html`)
+1. Open `dist/signatures/northstar-signature.html` in Google Chrome.
+2. Select all (`Ctrl + A`) and Copy (`Ctrl + C`).
+3. In Gmail Settings → **Signature**, click `+ Create new`, paste (`Ctrl + V`), and click **Save Changes**.
+4. Compose an email to another account or to yourself and verify:
+   - **Images:** Headshot and logo render without broken placeholders.
+   - **Links:** Phone (`tel:`), Email (`mailto:`), and URLs open expected targets.
+   - **Text Wrapping:** Contact details and banner text do not clip on narrow phone viewports.
+   - **Button / Banner:** Banner table retains legible contrast.
+   - **Dark Mode:** Text remains readable when dark mode is toggled in Gmail / Outlook.
+
+---
+
+## Steps Needed Before Real Client Handoff
+
+Before delivering either sample to a paying client:
+1. **Asset Hosting:** Replace all `placehold.co` image URLs with permanent HTTPS URLs hosted on the client's CDN, AWS S3, or Cloudflare Images.
+2. **Contact & Social Details:** Replace fictional demo values (`alex@northstarstudio.example`, `+1 555-019-2837`) with the client's actual data.
+3. **ESP Integration:** For the marketing email, import `dist/emails/orbitflow-launch.html` into the client's ESP (Mailchimp, Klaviyo, ActiveCampaign, HubSpot, or Brevo). Replace `#` with ESP merge tags (e.g. `*|UNSUB|*`, `*|ARCHIVE|*`).
+4. **Litmus / Email on Acid Test:** Run a full automated preview matrix to verify Word-engine Outlook rendering and dark-mode color inversions.
 
 ---
 
