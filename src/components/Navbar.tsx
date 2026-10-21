@@ -7,9 +7,13 @@ export function Navbar() {
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           to="/"
-          className="font-bold text-lg tracking-tight text-white hover:text-violet-300 transition-colors"
+          className="font-bold text-lg tracking-tight text-white hover:text-violet-300 transition-colors flex items-center gap-2.5"
         >
-          <span className="text-violet-400">✦</span> Darshaka Lanka
+          <span className="text-violet-400">✦</span>
+          <span>Darshaka Lanka</span>
+          <span className="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-md bg-violet-500/20 text-violet-300 border border-violet-500/40 font-mono">
+            Emails
+          </span>
         </Link>
         <div className="flex items-center gap-6">
           <a

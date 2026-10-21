@@ -6,9 +6,14 @@ export function Footer() {
     <footer className="border-t border-slate-800 bg-[#060d1f]">
       <div className="max-w-5xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
-          <p className="font-bold text-white">
-            <span className="text-violet-400">✦</span> Darshaka Lanka
-          </p>
+          <div className="flex items-center gap-2">
+            <p className="font-bold text-white">
+              <span className="text-violet-400">✦</span> Darshaka Lanka
+            </p>
+            <span className="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-md bg-violet-500/20 text-violet-300 border border-violet-500/40 font-mono">
+              Emails
+            </span>
+          </div>
           <p className="text-slate-500 text-sm mt-1">
             Senior Frontend &amp; Email Developer
           </p>
