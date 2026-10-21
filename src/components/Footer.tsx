@@ -23,14 +23,6 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href={siteConfig.contact.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
-          >
-            Twitter
-          </a>
-          <a
             href={siteConfig.contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
