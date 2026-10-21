@@ -54,3 +54,4 @@ export const siteConfig = {
 } as const;
 
 export type Project = (typeof siteConfig.projects)[number];
+

@@ -71,3 +71,4 @@ All company details, testimonials, and pricing are invented and not based on any
 | Yahoo Mail | ⬜ Not tested |
 
 To test, use a service such as [Litmus](https://litmus.com) or [Email on Acid](https://www.emailonacid.com).
+

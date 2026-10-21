@@ -33,3 +33,4 @@ for (const { src, dest } of copies) {
 }
 
 console.log('\n✓ copy-dist-to-public complete.')
+
