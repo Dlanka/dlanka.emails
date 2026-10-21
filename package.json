@@ -6,7 +6,7 @@
   "description": "Darshaka Lanka — Freelance Email Developer Portfolio",
   "scripts": {
     "dev": "vite",
-    "build": "yarn build:emails && tsc -b && vite build",
+    "build": "yarn build:emails && tsc -b && vite build && node scripts/sync-build-to-dist.mjs",
     "build:emails": "node scripts/build-emails.mjs && node scripts/copy-dist-to-public.mjs",
     "validate:emails": "node scripts/validate-emails.mjs",
     "preview": "vite preview",
