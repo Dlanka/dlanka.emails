@@ -1,0 +1,196 @@
+import { Navbar } from '../components/Navbar'
+import { Footer } from '../components/Footer'
+import { ProjectCard } from '../components/ProjectCard'
+import { siteConfig } from '../config/site'
+
+const stackItems = [
+  { icon: '📧', name: 'MJML', desc: 'Component-based email templating that compiles to responsive HTML.' },
+  { icon: '🎨', name: 'HTML + CSS', desc: 'Table-based layouts, inline CSS, and conservative email-safe styling.' },
+  { icon: '⚛️', name: 'React + TypeScript', desc: 'Portfolio UI built with Vite, React, and full TypeScript coverage.' },
+  { icon: '🌊', name: 'Tailwind CSS v4', desc: 'Utility-first styling with the latest Oxide engine.' },
+  { icon: '☁️', name: 'Cloudflare Pages', desc: 'Blazing-fast global CDN deployment with zero cold starts.' },
+  { icon: '🔍', name: 'Email Validation', desc: 'Custom scripts to verify compiled HTML output integrity.' },
+]
+
+const workflowSteps = [
+  {
+    step: '01',
+    title: 'Design Review',
+    desc: 'Analyse client design files, identify email-compatible patterns, and flag any unsupported CSS early.',
+  },
+  {
+    step: '02',
+    title: 'MJML Authoring',
+    desc: 'Build responsive email structure using MJML components — no layout guesswork, clean semantic output.',
+  },
+  {
+    step: '03',
+    title: 'Compile & Validate',
+    desc: 'Compile MJML to standalone HTML, run validation scripts, and confirm all links, content, and assets.',
+  },
+  {
+    step: '04',
+    title: 'Preview & Deliver',
+    desc: 'Browser preview, documented source files, and delivery-ready HTML — ready to drop into any ESP.',
+  },
+]
+
+export function HomePage() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+
+      {/* ─── HERO ──────────────────────────────────────────────────── */}
+      <section className="relative pt-36 pb-24 px-6 overflow-hidden">
+        {/* Background blobs */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-violet-700/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto text-center relative">
+          <div className="inline-flex items-center gap-2 bg-violet-500/10 border border-violet-500/20 text-violet-300 text-sm font-medium px-4 py-2 rounded-full mb-8">
+            <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" />
+            Open to new projects
+          </div>
+
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-6">
+            Email experiences{' '}
+            <span className="text-gradient">built for the inbox.</span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto mb-10">
+            Freelance email developer specialising in{' '}
+            <span className="text-slate-200 font-medium">MJML</span>,{' '}
+            <span className="text-slate-200 font-medium">responsive HTML emails</span>,{' '}
+            <span className="text-slate-200 font-medium">HTML signatures</span>, and pixel-perfect
+            design-to-HTML implementation — built for real email clients, not just browsers.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="#projects"
+              className="w-full sm:w-auto bg-violet-600 hover:bg-violet-500 text-white font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-violet-500/25 text-center"
+            >
+              View Projects
+            </a>
+            <a
+              href={`mailto:${siteConfig.contact.email}`}
+              className="w-full sm:w-auto border border-slate-700 hover:border-violet-500/50 text-slate-300 hover:text-white font-semibold px-8 py-4 rounded-xl transition-all text-center"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PROJECTS ─────────────────────────────────────────────── */}
+      <section id="projects" className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-12">
+            <p className="text-violet-400 text-sm font-semibold tracking-widest uppercase mb-3">
+              Portfolio Samples
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+              Production-quality email work
+            </h2>
+            <p className="text-slate-400 mt-3 max-w-xl">
+              Both samples are fully implemented with working source files, compiled HTML, and
+              browser previews. Browser preview does not guarantee identical rendering in every
+              email client.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {siteConfig.projects.map((project, i) => (
+              <ProjectCard key={project.id} project={project} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── STACK ────────────────────────────────────────────────── */}
+      <section id="stack" className="py-20 px-6 bg-[#080f1f]">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-12">
+            <p className="text-violet-400 text-sm font-semibold tracking-widest uppercase mb-3">
+              Technology Stack
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+              Tools of the trade
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {stackItems.map((item) => (
+              <div
+                key={item.name}
+                className="glass rounded-xl p-5 card-hover"
+              >
+                <span className="text-3xl mb-3 block">{item.icon}</span>
+                <h3 className="text-white font-semibold mb-1">{item.name}</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── WORKFLOW ────────────────────────────────────────────── */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-12">
+            <p className="text-violet-400 text-sm font-semibold tracking-widest uppercase mb-3">
+              My Workflow
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+              From design to inbox
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {workflowSteps.map((step) => (
+              <div key={step.step} className="relative">
+                <p className="text-5xl font-black text-violet-500/20 mb-3 leading-none">{step.step}</p>
+                <h3 className="text-white font-semibold text-lg mb-2">{step.title}</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── CONTACT ─────────────────────────────────────────────── */}
+      <section id="contact" className="py-20 px-6 bg-[#080f1f]">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-violet-400 text-sm font-semibold tracking-widest uppercase mb-4">
+            Get In Touch
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">
+            Let's build your next email campaign
+          </h2>
+          <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">
+            Looking for a developer who understands both design and email-client quirks?
+            I'm available for freelance projects on Upwork and direct contracts.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={`mailto:${siteConfig.contact.email}`}
+              className="w-full sm:w-auto bg-violet-600 hover:bg-violet-500 text-white font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-violet-500/25 text-center"
+            >
+              {siteConfig.contact.email}
+            </a>
+            <a
+              href={siteConfig.contact.upwork}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto border border-slate-700 hover:border-violet-500/50 text-slate-300 hover:text-white font-semibold px-8 py-4 rounded-xl transition-all text-center"
+            >
+              View on Upwork →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  )
+}

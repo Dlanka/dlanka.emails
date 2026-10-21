@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output (Vite build)
+build/
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.*.local
+*.env
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Vite cache
+.vite/
+
+# NOTE: dist/ is intentionally tracked — it contains pre-compiled email HTML
+# that should be committed for portfolio demo purposes and Cloudflare Pages serving.
+# public/dist/ is also tracked for the same reason.

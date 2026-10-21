@@ -1,0 +1,286 @@
+<mjml>
+  <mj-head>
+    <mj-title>OrbitFlow — Your Workflow. Supercharged.</mj-title>
+    <mj-preview>Introducing OrbitFlow 2.0 — the project management platform that moves as fast as your team does.</mj-preview>
+
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" />
+      <mj-body background-color="#f0f2f7" />
+      <mj-section background-color="#ffffff" padding="0" />
+      <mj-text color="#1e293b" line-height="1.6" font-size="15px" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: inherit; }
+      .btn-primary a {
+        display: inline-block !important;
+        text-decoration: none !important;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body width="600px">
+
+    <!-- ─── PRE-HEADER / TOP BAR ──────────────────────────────────── -->
+    <mj-section background-color="#0f0f23" padding="12px 24px">
+      <mj-column>
+        <mj-text color="#94a3b8" font-size="13px" align="center">
+          Having trouble viewing this email?
+          <a href="#" style="color:#7c3aed; text-decoration:underline;">View in browser</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── HEADER / LOGO ─────────────────────────────────────────── -->
+    <mj-section background-color="#0f0f23" padding="28px 40px 24px">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="800" color="#ffffff" align="center" letter-spacing="-0.5px">
+          <span style="color:#7c3aed;">◎</span> OrbitFlow
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── HERO ──────────────────────────────────────────────────── -->
+    <mj-section background-color="#0f0f23" padding="0 40px 48px">
+      <mj-column>
+        <mj-text
+          font-size="13px"
+          font-weight="600"
+          color="#7c3aed"
+          align="center"
+          letter-spacing="2px"
+          padding-bottom="16px">
+          PRODUCT LAUNCH · ORBITFLOW 2.0
+        </mj-text>
+
+        <mj-text
+          font-size="40px"
+          font-weight="800"
+          color="#ffffff"
+          align="center"
+          line-height="1.2"
+          letter-spacing="-1px"
+          padding-bottom="20px">
+          Your workflow,<br/>
+          <span style="background: linear-gradient(135deg, #7c3aed, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">supercharged.</span>
+        </mj-text>
+
+        <mj-text
+          font-size="17px"
+          color="#94a3b8"
+          align="center"
+          line-height="1.7"
+          padding-bottom="32px">
+          OrbitFlow 2.0 is here. AI-powered project insights, real-time team sync, and
+          a redesigned workspace that keeps everyone on the same orbit.
+        </mj-text>
+
+        <!-- CTA Button -->
+        <mj-button
+          background-color="#7c3aed"
+          color="#ffffff"
+          font-size="16px"
+          font-weight="600"
+          border-radius="10px"
+          padding="16px 40px"
+          inner-padding="0"
+          href="#"
+          align="center">
+          Start Free — No Card Required
+        </mj-button>
+
+        <mj-text font-size="13px" color="#475569" align="center" padding-top="12px">
+          14-day free trial · Cancel anytime
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── DASHBOARD MOCKUP ───────────────────────────────────────── -->
+    <mj-section background-color="#0f0f23" padding="0 0 0">
+      <mj-column padding="0">
+        <!-- SVG dashboard mockup inline as data URI in a table cell -->
+        <mj-image
+          src="https://placehold.co/600x320/1e1b4b/7c3aed?text=OrbitFlow+Dashboard+2.0"
+          alt="OrbitFlow 2.0 dashboard — AI-powered project board showing sprint lanes, team avatars, and analytics sidebar"
+          width="600px"
+          padding="0"
+          border-radius="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── DIVIDER / TRANSITION ──────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="0">
+      <mj-column>
+        <mj-divider border-color="#e2e8f0" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── WHAT'S NEW INTRO ──────────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="48px 40px 32px">
+      <mj-column>
+        <mj-text font-size="13px" font-weight="600" color="#7c3aed" letter-spacing="2px" padding-bottom="12px">
+          WHAT'S NEW
+        </mj-text>
+        <mj-text font-size="28px" font-weight="700" color="#0f172a" line-height="1.3" letter-spacing="-0.5px" padding-bottom="16px">
+          Everything your team needs, redesigned from the ground up.
+        </mj-text>
+        <mj-text font-size="15px" color="#475569" line-height="1.7">
+          We've rebuilt OrbitFlow with speed, clarity, and AI at its core.
+          Here's what's waiting for you on the other side of that login button.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── FEATURE 1 ─────────────────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="8px 40px">
+      <mj-column
+        width="72px"
+        padding="16px 16px 16px 0"
+        vertical-align="top">
+        <mj-table>
+          <tr>
+            <td style="background:#f5f3ff; border-radius:14px; width:56px; height:56px; text-align:center; vertical-align:middle; font-size:26px; line-height:56px;">
+              🤖
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+      <mj-column vertical-align="top">
+        <mj-text font-size="17px" font-weight="700" color="#0f172a" padding-bottom="6px">
+          AI Project Intelligence
+        </mj-text>
+        <mj-text font-size="14px" color="#64748b" line-height="1.65">
+          Automatically surface risks, suggest task prioritisation, and predict delivery dates
+          based on your team's real velocity — not wishful thinking.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── FEATURE 2 ─────────────────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="8px 40px">
+      <mj-column
+        width="72px"
+        padding="16px 16px 16px 0"
+        vertical-align="top">
+        <mj-table>
+          <tr>
+            <td style="background:#eff6ff; border-radius:14px; width:56px; height:56px; text-align:center; vertical-align:middle; font-size:26px; line-height:56px;">
+              ⚡
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+      <mj-column vertical-align="top">
+        <mj-text font-size="17px" font-weight="700" color="#0f172a" padding-bottom="6px">
+          Real-Time Team Sync
+        </mj-text>
+        <mj-text font-size="14px" color="#64748b" line-height="1.65">
+          Live presence indicators, instant comment threads, and conflict-free simultaneous
+          editing across every board, doc, and timeline.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── FEATURE 3 ─────────────────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="8px 40px 32px">
+      <mj-column
+        width="72px"
+        padding="16px 16px 16px 0"
+        vertical-align="top">
+        <mj-table>
+          <tr>
+            <td style="background:#f0fdf4; border-radius:14px; width:56px; height:56px; text-align:center; vertical-align:middle; font-size:26px; line-height:56px;">
+              📊
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+      <mj-column vertical-align="top">
+        <mj-text font-size="17px" font-weight="700" color="#0f172a" padding-bottom="6px">
+          Executive Dashboards
+        </mj-text>
+        <mj-text font-size="14px" color="#64748b" line-height="1.65">
+          One-click reports for stakeholders. Track budget, scope, and team health in a
+          single shareable view — no spreadsheet gymnastics required.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SECONDARY CTA BAND ────────────────────────────────────── -->
+    <mj-section background-color="#f8fafc" padding="0">
+      <mj-column>
+        <mj-divider border-color="#e2e8f0" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f8fafc" padding="48px 40px">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="700" color="#0f172a" align="center" line-height="1.3" padding-bottom="12px">
+          Already on OrbitFlow?
+        </mj-text>
+        <mj-text font-size="15px" color="#64748b" align="center" line-height="1.7" padding-bottom="28px">
+          Your workspace upgrades automatically. Log in to explore every new feature
+          and read the full 2.0 changelog.
+        </mj-text>
+        <mj-button
+          background-color="#0f172a"
+          color="#ffffff"
+          font-size="15px"
+          font-weight="600"
+          border-radius="10px"
+          padding="14px 36px"
+          inner-padding="0"
+          href="#"
+          align="center">
+          Open My Workspace →
+        </mj-button>
+        <mj-text font-size="13px" color="#94a3b8" align="center" padding-top="16px">
+          Questions? Reply to this email — our team actually reads replies.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SOCIAL ─────────────────────────────────────────────────── -->
+    <mj-section background-color="#0f0f23" padding="40px 40px 24px">
+      <mj-column>
+        <mj-text font-size="18px" font-weight="800" color="#ffffff" align="center" padding-bottom="20px">
+          <span style="color:#7c3aed;">◎</span> OrbitFlow
+        </mj-text>
+        <mj-social font-size="13px" icon-size="20px" mode="horizontal" align="center" color="#94a3b8" padding-bottom="24px">
+          <mj-social-element name="twitter" href="#" background-color="#1da1f2" color="#ffffff">
+            Twitter
+          </mj-social-element>
+          <mj-social-element name="linkedin" href="#" background-color="#0077b5" color="#ffffff">
+            LinkedIn
+          </mj-social-element>
+          <mj-social-element name="github" href="#" background-color="#333333" color="#ffffff">
+            GitHub
+          </mj-social-element>
+        </mj-social>
+        <mj-text font-size="13px" color="#475569" align="center" line-height="1.8">
+          OrbitFlow Inc. · 742 Evergreen Terrace, Suite 100 · Springfield, USA 62701<br/>
+          <em>(Fictional address — demo purposes only)</em>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+    <mj-section background-color="#0f0f23" padding="0 40px 32px">
+      <mj-column>
+        <mj-divider border-color="#1e293b" border-width="1px" padding-bottom="20px" />
+        <mj-text font-size="12px" color="#334155" align="center" line-height="1.8">
+          You received this email because you signed up for OrbitFlow updates.<br/>
+          <a href="#" style="color:#7c3aed; text-decoration:underline;">Unsubscribe</a> ·
+          <a href="#" style="color:#7c3aed; text-decoration:underline;">Manage preferences</a> ·
+          <a href="#" style="color:#7c3aed; text-decoration:underline;">Privacy policy</a><br/><br/>
+          <strong style="color:#475569;">Note:</strong> All links above are demo placeholders.
+          This is a fictional email for portfolio demonstration purposes only.<br/>
+          Developed by <a href="https://madebywimu.com" style="color:#7c3aed; text-decoration:underline;">Madebywimu</a> — Email Development Portfolio.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

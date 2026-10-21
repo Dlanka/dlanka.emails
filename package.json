@@ -1,0 +1,33 @@
+{
+  "name": "madebywimu-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Madebywimu — Freelance Email Developer Portfolio",
+  "scripts": {
+    "dev": "vite",
+    "build": "yarn build:emails && tsc -b && vite build",
+    "build:emails": "node scripts/build-emails.mjs && node scripts/copy-dist-to-public.mjs",
+    "validate:emails": "node scripts/validate-emails.mjs",
+    "preview": "vite preview",
+    "lint": "oxlint"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1",
+    "@types/mjml": "^5.0.0",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "mjml": "^5.4.1",
+    "oxlint": "^1.88.0",
+    "react-router-dom": "^7.18.4",
+    "tailwindcss": "^4.1",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  }
+}
