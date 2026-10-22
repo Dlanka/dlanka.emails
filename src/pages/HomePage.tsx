@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer'
 import { ProjectCard } from '../components/ProjectCard'
@@ -36,6 +37,8 @@ const workflowSteps = [
 ]
 
 export function HomePage() {
+  const signatureProjects = siteConfig.projects.filter((p) => p.category === 'HTML Signature')
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -99,10 +102,149 @@ export function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {siteConfig.projects.map((project, i) => (
-              <ProjectCard key={project.id} project={project} index={i} />
-            ))}
+          {/* Featured Showcase: Marketing Email */}
+          <div className="mb-14">
+            <div className="glass rounded-2xl overflow-hidden border border-violet-500/20 hover:border-violet-500/40 transition-all duration-300">
+              <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+                {/* Left Preview Column */}
+                <div className="lg:col-span-5 bg-gradient-to-br from-[#0f0f23] via-[#161233] to-[#1e1b4b] p-6 sm:p-8 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-slate-800">
+                  <div className="w-full max-w-[340px] rounded-xl overflow-hidden shadow-2xl border border-violet-900/40">
+                    {/* Mock email top bar */}
+                    <div className="bg-[#0f0f23] px-5 py-3 text-center border-b border-violet-900/30">
+                      <span className="text-violet-400 font-bold text-lg">◎</span>
+                      <span className="text-white font-bold text-lg ml-1">OrbitFlow</span>
+                    </div>
+                    <div className="bg-[#0f0f23] px-5 py-4 text-center">
+                      <p className="text-violet-400 text-[10px] font-semibold tracking-widest mb-1">PRODUCT LAUNCH</p>
+                      <p className="text-white font-bold text-base leading-tight mb-2">
+                        Your workflow,<br />
+                        <span className="text-violet-400">supercharged.</span>
+                      </p>
+                      <p className="text-slate-400 text-[11px] leading-relaxed mb-3">
+                        OrbitFlow 2.0 is here. AI-powered insights &amp; real-time team sync.
+                      </p>
+                      <span className="bg-violet-600 text-white text-[11px] font-semibold px-4 py-1.5 rounded-lg inline-block">
+                        Start Free — No Card Required
+                      </span>
+                    </div>
+                    <div className="bg-[#1e1b4b] py-3 text-center border-y border-violet-900/30">
+                      <span className="text-violet-300 text-xs opacity-75 font-mono">[ 2-Column Responsive Feature Grid ]</span>
+                    </div>
+                    <div className="bg-white p-4">
+                      <div className="flex items-start gap-2.5 mb-2">
+                        <span className="text-lg">🤖</span>
+                        <div>
+                          <p className="text-slate-900 text-xs font-bold leading-tight">AI Project Intelligence</p>
+                          <p className="text-slate-500 text-[10px] leading-tight">Predict delivery dates with machine precision.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2.5">
+                        <span className="text-lg">⚡</span>
+                        <div>
+                          <p className="text-slate-900 text-xs font-bold leading-tight">Real-Time Team Sync</p>
+                          <p className="text-slate-500 text-[10px] leading-tight">Live presence indicators &amp; conflict-free editing.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Details Column */}
+                <div className="lg:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
+                  <div>
+                    <div className="flex flex-wrap items-center gap-2 mb-3">
+                      <span className="text-xs font-semibold px-3 py-1 rounded-full bg-violet-500/10 text-violet-300 border border-violet-500/20">
+                        Featured • Marketing Email
+                      </span>
+                      <span className="text-xs font-mono text-slate-400 bg-slate-800/80 px-2.5 py-0.5 rounded">
+                        MJML 4.x
+                      </span>
+                    </div>
+
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+                      OrbitFlow — Product Launch Email
+                    </h3>
+                    <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-5">
+                      A full-featured SaaS product-launch email built with MJML. Engineered for high conversion
+                      with responsive single- and two-column layouts, Outlook VML fallbacks, and bulletproof CTA buttons.
+                    </p>
+
+                    {/* Highlights bullet points */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+                      <div className="flex items-start gap-2 text-xs text-slate-300">
+                        <span className="text-emerald-400 font-bold">✓</span>
+                        <span><strong className="text-white">mj-group:</strong> Side-by-side columns that never break on mobile</span>
+                      </div>
+                      <div className="flex items-start gap-2 text-xs text-slate-300">
+                        <span className="text-emerald-400 font-bold">✓</span>
+                        <span><strong className="text-white">VML Fallback:</strong> Bulletproof CTA buttons for Outlook 2016–2021</span>
+                      </div>
+                      <div className="flex items-start gap-2 text-xs text-slate-300">
+                        <span className="text-emerald-400 font-bold">✓</span>
+                        <span><strong className="text-white">Dark Mode:</strong> Color inverted gracefully with meta scheme tags</span>
+                      </div>
+                      <div className="flex items-start gap-2 text-xs text-slate-300">
+                        <span className="text-emerald-400 font-bold">✓</span>
+                        <span><strong className="text-white">Self-contained:</strong> Standalone HTML with alt text &amp; demo footer</span>
+                      </div>
+                    </div>
+
+                    {/* Tech tags */}
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {['MJML', 'HTML', 'Inline CSS', 'Responsive', 'Outlook-tested'].map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-xs bg-slate-800/80 text-slate-300 px-3 py-1 rounded-md font-mono border border-slate-700/50"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Actions */}
+                  <div className="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-slate-800">
+                    <Link
+                      to="/preview/orbitflow"
+                      className="w-full sm:w-auto flex-1 text-center bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold px-6 py-3 rounded-xl transition-all hover:shadow-lg hover:shadow-violet-500/25"
+                    >
+                      Open Live Browser Preview &amp; Spec →
+                    </Link>
+                    <a
+                      href="https://github.com/Dlanka/dlanka.emails/blob/main/src/emails/orbitflow-launch.mjml"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full sm:w-auto text-center border border-slate-700 hover:border-violet-500/50 text-slate-300 hover:text-white text-sm font-medium px-5 py-3 rounded-xl transition-colors"
+                    >
+                      View Source (MJML)
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Section 2: Corporate Email Signatures */}
+          <div>
+            <div className="flex items-end justify-between mb-6">
+              <div>
+                <p className="text-cyan-400 text-xs font-semibold tracking-widest uppercase mb-1">
+                  Corporate &amp; Executive
+                </p>
+                <h3 className="text-2xl font-bold text-white tracking-tight">
+                  HTML Email Signatures
+                </h3>
+              </div>
+              <p className="text-xs text-slate-500 hidden sm:block">
+                Table-based • Inline CSS • Image-blocked fallbacks
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+              {signatureProjects.map((project, i) => (
+                <ProjectCard key={project.id} project={project} index={i + 1} />
+              ))}
+            </div>
           </div>
         </div>
       </section>

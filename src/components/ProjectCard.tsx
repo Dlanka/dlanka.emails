@@ -152,39 +152,41 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
   return (
     <article
-      className="glass rounded-2xl overflow-hidden card-hover"
+      className="glass rounded-2xl overflow-hidden card-hover flex flex-col h-full"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       {/* Visual preview */}
-      <div className={`${bgClass} px-6 py-8 min-h-[280px] flex items-center justify-center`}>
+      <div className={`${bgClass} px-6 py-8 min-h-[260px] flex items-center justify-center`}>
         {preview}
       </div>
 
       {/* Card body */}
-      <div className="p-6">
-        <div className="flex items-center gap-2 mb-3">
-          <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[project.category] ?? 'bg-slate-700 text-slate-300'}`}>
-            {project.category}
-          </span>
-        </div>
-
-        <h3 className="font-bold text-xl text-white mb-2 leading-tight">{project.title}</h3>
-        <p className="text-slate-400 text-sm leading-relaxed mb-4">{project.description}</p>
-
-        {/* Tech tags */}
-        <div className="flex flex-wrap gap-2 mb-5">
-          {project.tags.map((tag) => (
-            <span
-              key={tag}
-              className="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md font-mono"
-            >
-              {tag}
+      <div className="p-6 flex flex-col flex-1 justify-between">
+        <div>
+          <div className="flex items-center gap-2 mb-3">
+            <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[project.category] ?? 'bg-slate-700 text-slate-300'}`}>
+              {project.category}
             </span>
-          ))}
+          </div>
+
+          <h3 className="font-bold text-xl text-white mb-2 leading-tight">{project.title}</h3>
+          <p className="text-slate-400 text-sm leading-relaxed mb-4">{project.description}</p>
+
+          {/* Tech tags */}
+          <div className="flex flex-wrap gap-2 mb-5">
+            {project.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md font-mono"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Links */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 pt-2">
           <Link
             to={project.previewPath}
             className="flex-1 text-center bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors"
