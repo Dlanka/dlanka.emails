@@ -102,15 +102,20 @@ const previewContent: Record<string, React.ReactNode> = {
     <div className="w-full max-w-[380px] mx-auto">
       <div className="bg-white rounded-xl overflow-hidden shadow-2xl flex border border-slate-200">
         {/* Left blue panel */}
-        <div className="w-[110px] bg-[#0050c8] p-3 flex flex-col items-center justify-center relative">
+        <div className="w-8 bg-[#0050c8] relative flex-shrink-0" />
+        {/* Avatar Seam Column */}
+        <div
+          className="w-28 flex items-center justify-center flex-shrink-0 py-3"
+          style={{ background: 'linear-gradient(to right, #0050c8 50%, #ffffff 50%)' }}
+        >
           <img
             src="/Ingoude-assets/profile-img.png"
             alt="Jonathan Patterson"
-            className="w-16 h-16 rounded-full border-2 border-white object-cover shadow-md"
+            className="w-24 h-24 object-contain"
           />
         </div>
         {/* Right info panel */}
-        <div className="flex-1 p-3.5 bg-white text-left">
+        <div className="flex-1 p-3.5 bg-white text-left min-w-0">
           <div className="flex items-center gap-1.5 mb-1">
             <img src="/Ingoude-assets/cmp-logo.png" alt="Logo" className="w-4 h-4 object-contain" />
             <span className="text-[10px] font-bold text-slate-800">Ingoude Company</span>
@@ -120,7 +125,7 @@ const previewContent: Record<string, React.ReactNode> = {
           <div className="space-y-1 text-[9px] text-slate-700">
             <div className="flex items-center gap-1.5">
               <img src="/Ingoude-assets/icon-world.png" alt="Web" className="w-3 h-3 object-contain" />
-              <span>www.reallygreatsite.com</span>
+              <span className="truncate">www.reallygreatsite.com</span>
             </div>
             <div className="flex items-center gap-1.5">
               <img src="/Ingoude-assets/icon-phone.png" alt="Phone" className="w-3 h-3 object-contain" />
@@ -128,11 +133,11 @@ const previewContent: Record<string, React.ReactNode> = {
             </div>
             <div className="flex items-center gap-1.5">
               <img src="/Ingoude-assets/icon-mail.png" alt="Mail" className="w-3 h-3 object-contain" />
-              <span>hello@reallygreatsite.com</span>
+              <span className="truncate">hello@reallygreatsite.com</span>
             </div>
             <div className="flex items-center gap-1.5">
               <img src="/Ingoude-assets/icon-location.png" alt="Location" className="w-3 h-3 object-contain" />
-              <span>123 Anywhere St., Any City</span>
+              <span className="truncate">123 Anywhere St., Any City</span>
             </div>
           </div>
         </div>
