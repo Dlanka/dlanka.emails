@@ -93,13 +93,13 @@ export function HomePage() {
               Production-quality email work
             </h2>
             <p className="text-slate-400 mt-3 max-w-xl">
-              Both samples are fully implemented with working source files, compiled HTML, and
+              All samples are fully implemented with working source files, compiled HTML, and
               browser previews. Browser preview does not guarantee identical rendering in every
               email client.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {siteConfig.projects.map((project, i) => (
               <ProjectCard key={project.id} project={project} index={i} />
             ))}

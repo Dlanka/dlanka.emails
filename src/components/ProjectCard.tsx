@@ -14,6 +14,7 @@ const categoryColors: Record<string, string> = {
 const previewBg: Record<string, string> = {
   'orbitflow-launch': 'bg-gradient-to-br from-[#0f0f23] to-[#1e1b4b]',
   'northstar-signature': 'bg-gradient-to-br from-[#0c1929] to-[#0a2540]',
+  'ingoude-signature': 'bg-gradient-to-br from-[#002244] to-[#0050c8]/40',
 }
 
 const previewContent: Record<string, React.ReactNode> = {
@@ -93,6 +94,47 @@ const previewContent: Record<string, React.ReactNode> = {
         <div className="bg-gradient-to-r from-[#0c4a6e] to-cyan-600 px-4 py-2 flex justify-between items-center">
           <span className="text-cyan-100 text-[10px] font-semibold">★ Now taking new client projects for Q1 2027</span>
           <span className="text-sky-300 text-[10px]">Book a call →</span>
+        </div>
+      </div>
+    </div>
+  ),
+  'ingoude-signature': (
+    <div className="w-full max-w-[380px] mx-auto">
+      <div className="bg-white rounded-xl overflow-hidden shadow-2xl flex border border-slate-200">
+        {/* Left blue panel */}
+        <div className="w-[110px] bg-[#0050c8] p-3 flex flex-col items-center justify-center relative">
+          <img
+            src="/Ingoude-assets/profile-img.png"
+            alt="Jonathan Patterson"
+            className="w-16 h-16 rounded-full border-2 border-white object-cover shadow-md"
+          />
+        </div>
+        {/* Right info panel */}
+        <div className="flex-1 p-3.5 bg-white text-left">
+          <div className="flex items-center gap-1.5 mb-1">
+            <img src="/Ingoude-assets/cmp-logo.png" alt="Logo" className="w-4 h-4 object-contain" />
+            <span className="text-[10px] font-bold text-slate-800">Ingoude Company</span>
+          </div>
+          <p className="text-[#0050c8] font-extrabold text-sm leading-tight">Jonathan Patterson</p>
+          <p className="text-[#0050c8] text-[10px] font-semibold italic mb-2">Marketing Manager</p>
+          <div className="space-y-1 text-[9px] text-slate-700">
+            <div className="flex items-center gap-1.5">
+              <img src="/Ingoude-assets/icon-world.png" alt="Web" className="w-3 h-3 object-contain" />
+              <span>www.reallygreatsite.com</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <img src="/Ingoude-assets/icon-phone.png" alt="Phone" className="w-3 h-3 object-contain" />
+              <span>123-456-7890</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <img src="/Ingoude-assets/icon-mail.png" alt="Mail" className="w-3 h-3 object-contain" />
+              <span>hello@reallygreatsite.com</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <img src="/Ingoude-assets/icon-location.png" alt="Location" className="w-3 h-3 object-contain" />
+              <span>123 Anywhere St., Any City</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

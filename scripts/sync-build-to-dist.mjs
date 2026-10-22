@@ -19,3 +19,4 @@ if (existsSync(buildDir)) {
   cpSync(buildDir, distDir, { recursive: true })
   console.log('✓ Synced build/ output into dist/ for Cloudflare compatibility.')
 }
+

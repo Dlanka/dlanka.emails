@@ -52,6 +52,20 @@ export const siteConfig = {
       accentColor: "#0891b2",
       tags: ["Signature", "Corporate", "Gmail", "HTML"],
     },
+    {
+      id: "ingoude-signature",
+      title: "Ingoude Company — Corporate Signature",
+      category: "HTML Signature",
+      description:
+        "Modern Canva-style corporate email signature with decorative blue banner, " +
+        "circular avatar framing, custom icons, and email-safe HTML table structure.",
+      tech: ["HTML", "Inline CSS", "Canva to HTML", "Email-safe"],
+      sourceFile: "src/signatures/ingoude-signature.html",
+      distFile: "dist/signatures/ingoude-signature.html",
+      previewPath: "/preview/ingoude",
+      accentColor: "#0050c8",
+      tags: ["Signature", "Canva to HTML", "Corporate", "Responsive"],
+    },
   ],
 } as const;
 

@@ -47,6 +47,29 @@ const checks = [
     ],
     minBytes: 200,
   },
+  {
+    file: 'dist/signatures/ingoude-signature.html',
+    label: 'Ingoude Company Signature',
+    requiredStrings: [
+      'Jonathan Patterson',
+      'Marketing Manager',
+      'Ingoude Company',
+      'reallygreatsite.com',
+      '123-456-7890',
+    ],
+    minBytes: 1500,
+  },
+  {
+    file: 'dist/signatures/ingoude-signature.txt',
+    label: 'Ingoude Company Plain Text Fallback',
+    requiredStrings: [
+      'Jonathan Patterson',
+      'Marketing Manager',
+      'Ingoude Company',
+      'reallygreatsite.com',
+    ],
+    minBytes: 150,
+  },
 ]
 
 let passed = 0
