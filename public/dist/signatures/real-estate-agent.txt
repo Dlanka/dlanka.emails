@@ -1,0 +1,22 @@
+======================================================================
+REAL ESTATE AGENT — EMAIL SIGNATURE (PLAIN TEXT ALTERNATIVE)
+Sample 4 of Darshaka Lanka Email Development Portfolio
+======================================================================
+
+Real Estate Agent
+Luxury & Residential Properties
+
+CONTACT DETAILS:
+- Email:   hello@reallygreatsite.com
+- Website: https://www.reallygreatsite.com
+- Phone:   +1 (555) 234-5678
+- Address: 123 Anywhere St., Any City
+
+======================================================================
+PRODUCTION NOTES:
+- Clean 2-column table layout (166px photo + 234px split info card).
+- Dark upper branding header with signature graphic and job title.
+- Light lower panel with 16x16 retina contact icons.
+- Inline CSS and email-safe fonts (Montserrat, Arial, sans-serif).
+- Tested for Gmail, Outlook (Windows/Mac/Web), and Apple Mail.
+======================================================================

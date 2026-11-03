@@ -70,6 +70,29 @@ const checks = [
     ],
     minBytes: 150,
   },
+  {
+    file: 'dist/signatures/real-estate-agent.html',
+    label: 'Real Estate Agent Signature',
+    requiredStrings: [
+      'Real Estate Agent',
+      'hello@reallygreatsite.com',
+      'reallygreatsite.com',
+      '555) 234-5678',
+      '123 Anywhere St.',
+    ],
+    minBytes: 2000,
+  },
+  {
+    file: 'dist/signatures/real-estate-agent.txt',
+    label: 'Real Estate Agent Plain Text Fallback',
+    requiredStrings: [
+      'Real Estate Agent',
+      'hello@reallygreatsite.com',
+      'reallygreatsite.com',
+      '555) 234-5678',
+    ],
+    minBytes: 150,
+  },
 ]
 
 let passed = 0

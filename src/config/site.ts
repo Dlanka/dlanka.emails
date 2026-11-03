@@ -66,6 +66,20 @@ export const siteConfig = {
       accentColor: "#0050c8",
       tags: ["Signature", "Canva to HTML", "Corporate", "Responsive"],
     },
+    {
+      id: "real-estate-agent",
+      title: "Real Estate Agent — Modern Split Signature",
+      category: "HTML Signature",
+      description:
+        "Modern two-column real estate agent email signature with portrait photo framing, " +
+        "dark branding header with handwritten signature mark, and retina contact icons.",
+      tech: ["HTML", "Inline CSS", "Tables", "Retina", "Email-safe"],
+      sourceFile: "src/signatures/real-estate-agent.html",
+      distFile: "dist/signatures/real-estate-agent.html",
+      previewPath: "/preview/real-estate",
+      accentColor: "#1a191a",
+      tags: ["Signature", "Real Estate", "Modern", "Retina Ready", "HTML"],
+    },
   ],
 } as const;
 

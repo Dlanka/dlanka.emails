@@ -15,6 +15,7 @@ const previewBg: Record<string, string> = {
   'orbitflow-launch': 'bg-gradient-to-br from-[#0f0f23] to-[#1e1b4b]',
   'northstar-signature': 'bg-gradient-to-br from-[#0c1929] to-[#0a2540]',
   'ingoude-signature': 'bg-gradient-to-br from-[#002244] to-[#0050c8]/40',
+  'real-estate-agent': 'bg-gradient-to-br from-[#111116] to-[#27272e]',
 }
 
 const previewContent: Record<string, React.ReactNode> = {
@@ -137,6 +138,53 @@ const previewContent: Record<string, React.ReactNode> = {
             </div>
             <div className="flex items-center gap-1.5">
               <img src="/Ingoude-assets/icon-location.png" alt="Location" className="w-3 h-3 object-contain" />
+              <span className="truncate">123 Anywhere St., Any City</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  ),
+  'real-estate-agent': (
+    <div className="w-full max-w-[360px] mx-auto">
+      <div className="bg-[#1a191a] rounded-xl overflow-hidden shadow-2xl flex border border-slate-700/50">
+        {/* Left Photo */}
+        <div className="w-[130px] flex-shrink-0 bg-[#1a191a]">
+          <img
+            src="/real-estate-agent/profile.png"
+            alt="Real Estate Agent"
+            className="w-full h-[160px] object-cover block"
+          />
+        </div>
+        {/* Right Info */}
+        <div className="flex-1 flex flex-col justify-between">
+          {/* Top dark block */}
+          <div className="bg-[#1a191a] p-3 border-b border-slate-800">
+            <img
+              src="/real-estate-agent/signature.png"
+              alt="Signature"
+              className="w-24 h-auto object-contain block mb-1"
+            />
+            <p className="text-[9px] font-bold text-slate-300 uppercase tracking-widest font-mono">
+              Real Estate Agent
+            </p>
+          </div>
+          {/* Bottom light block */}
+          <div className="bg-[#ededee] p-2.5 text-left space-y-1 text-[9px] text-[#1a191a] font-medium flex-1 flex flex-col justify-center">
+            <div className="flex items-center gap-1.5 truncate">
+              <img src="/real-estate-agent/icon-email.png" alt="Email" className="w-3 h-3 object-contain flex-shrink-0" />
+              <span className="truncate">hello@reallygreatsite.com</span>
+            </div>
+            <div className="flex items-center gap-1.5 truncate">
+              <img src="/real-estate-agent/icon-web-link.png" alt="Web" className="w-3 h-3 object-contain flex-shrink-0" />
+              <span className="truncate">www.reallygreatsite.com</span>
+            </div>
+            <div className="flex items-center gap-1.5 truncate">
+              <img src="/real-estate-agent/icon-phone.png" alt="Phone" className="w-3 h-3 object-contain flex-shrink-0" />
+              <span>+1 (555) 234-5678</span>
+            </div>
+            <div className="flex items-center gap-1.5 truncate">
+              <img src="/real-estate-agent/icon-location.png" alt="Location" className="w-3 h-3 object-contain flex-shrink-0" />
               <span className="truncate">123 Anywhere St., Any City</span>
             </div>
           </div>

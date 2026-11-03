@@ -7,8 +7,8 @@
  */
 
 import { createRequire } from 'module'
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs'
-import { resolve, dirname } from 'path'
+import { existsSync, mkdirSync, readFileSync, writeFileSync, copyFileSync, readdirSync } from 'fs'
+import { resolve, dirname, join } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -69,6 +69,21 @@ for (const { src, out } of emails) {
   } catch (err) {
     console.error(`  ✗ MJML compile failed for ${src}:`, err.message)
     hasError = true
+  }
+}
+
+// Ensure signatures dist directory exists and sync from src/signatures
+const sigSrcDir = resolve(root, 'src', 'signatures')
+const sigDistDir = resolve(root, 'dist', 'signatures')
+if (!existsSync(sigDistDir)) {
+  mkdirSync(sigDistDir, { recursive: true })
+}
+if (existsSync(sigSrcDir)) {
+  for (const file of readdirSync(sigSrcDir)) {
+    if (file.endsWith('.html') || file.endsWith('.txt')) {
+      copyFileSync(join(sigSrcDir, file), join(sigDistDir, file))
+      console.log(`  ✓ Synced src/signatures/${file} → dist/signatures/${file}`)
+    }
   }
 }
 
