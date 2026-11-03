@@ -5,11 +5,11 @@
   ║  Sample 4 of Darshaka Lanka Email Development Portfolio  ║
   ║                                                          ║
   ║  Design Specs:                                           ║
-  ║  - Two-column modern split layout (166px photo + 234px)  ║
-  ║  - Dark upper brand header with custom signature script  ║
-  ║  - Light lower contact section with Retina icons         ║
+  ║  - Two-tone horizontal split (46% dark, 54% light grey)  ║
+  ║  - Bottom-aligned portrait photo straddling the seam     ║
+  ║  - Upper dark header with handwritten signature script   ║
+  ║  - Lower light panel with retina contact icons           ║
   ║  - Email-safe table layout (Gmail, Outlook, Apple Mail)  ║
-  ║  - Clickable phone, email, website, and map links        ║
   ╚══════════════════════════════════════════════════════════╝
 -->
 <html lang="en">
@@ -28,167 +28,74 @@
   ─────────────────────────────────────────────────────────
 -->
 
-<table
-  role="presentation"
-  cellpadding="0"
-  cellspacing="0"
-  border="0"
-  width="100%"
-  style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:'Montserrat', Arial, -apple-system, BlinkMacSystemFont, sans-serif; font-size:13px; line-height:18px; color:#333333; margin:0; padding:0; max-width:400px; width:100%; border-collapse:collapse; border-radius:8px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.08);"
->
+<table class="sig-root" cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: 'Montserrat', Arial, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 18px; color: #333333; margin: 0; padding: 0; max-width: 400px; width: 100%; border-collapse: collapse; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" width="100%">
   <tr>
-    <td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse; padding:0; margin:0;">
-      <table
-        role="presentation"
-        cellpadding="0"
-        cellspacing="0"
-        border="0"
-        width="100%"
-        style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; border-spacing:0; border-collapse:collapse;"
-      >
+    <td class="td-bg-layer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background: linear-gradient(to bottom, #1a191a 46%, #ededee 0%); padding: 0; margin: 0; border-collapse: collapse;">
+      <table class="sig-tb-inner" cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; height: 100%; border-spacing: 0; border-collapse: collapse;" width="100%" height="100%">
         <tr>
-          <!-- ─── Left Column: High-Res Profile Photo (166px x 200px) ─── -->
-          <td
-            valign="top"
-            width="166"
-            height="200"
-            style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:166px; height:200px; padding:0; margin:0; line-height:0; font-size:0; vertical-align:top; border-collapse:collapse; background-color:#1a191a;"
-          >
-            <img
-              src="https://dlanka-emails.pages.dev/real-estate-agent/profile.png"
-              alt="Real Estate Agent"
-              width="166"
-              height="200"
-              style="display:block; width:166px; height:200px; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; object-fit:cover;"
-            />
+          <!-- Left: Profile Image -->
+          <td class="sig-profile" valign="bottom" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 160px; padding: 0; margin: 0; padding-top: 16px; text-align: center; border-collapse: collapse;" width="160" align="center">
+            <img class="img-profile" src="https://dlanka-emails.pages.dev/real-estate-agent/profile.png" alt="Profile Image" style="-ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 140px; display: block; margin: 0 auto; object-fit: cover;" width="140" height="auto">
           </td>
 
-          <!-- ─── Right Column: Split Dark / Light Info Card (234px) ─── -->
-          <td
-            width="234"
-            valign="top"
-            style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:234px; padding:0; margin:0; border-collapse:collapse;"
-          >
-            <table
-              role="presentation"
-              cellpadding="0"
-              cellspacing="0"
-              border="0"
-              width="100%"
-              style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; margin:0; padding:0; width:100%; border-spacing:0; border-collapse:collapse;"
-            >
-              <!-- Top: Dark Header with Cursive Signature & Title -->
+          <!-- Right: Details Card -->
+          <td class="td-right" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 240px; padding: 0; margin: 0; border-collapse: collapse;" width="240">
+            <table class="sig-container" cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; height: 100%; width: 100%; border-spacing: 0; border-collapse: collapse;" width="100%" height="100%">
+              <!-- Top -->
               <tr>
-                <td
-                  style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; color:#ededee; background-color:#1a191a; height:96px; padding:12px 16px; border-collapse:collapse; vertical-align:middle;"
-                  width="100%"
-                  height="96"
-                  bgcolor="#1a191a"
-                >
-                  <table
-                    role="presentation"
-                    cellpadding="0"
-                    cellspacing="0"
-                    border="0"
-                    width="100%"
-                    style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;"
-                  >
+                <td class="sig-top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; color: #ededee; height: 46%; padding-left: 16px; border-collapse: collapse;" width="100%" height="46%">
+                  <table class="sig-tb-inner" cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; height: 100%; border-spacing: 0; border-collapse: collapse;" width="100%" height="100%">
                     <tr>
-                      <td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse; line-height:0; font-size:0;">
-                        <img
-                          src="https://dlanka-emails.pages.dev/real-estate-agent/signature.png"
-                          alt="Signature"
-                          width="140"
-                          style="-ms-interpolation-mode:bicubic; border:0; outline:none; text-decoration:none; display:block; width:140px; height:auto; max-width:140px;"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:'Montserrat', Arial, sans-serif; font-size:9px; font-weight:700; color:#ededee; text-transform:uppercase; letter-spacing:2px; padding-top:6px; padding-left:2px; line-height:1.2;">
-                        Real Estate Agent
+                      <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+                        <img class="sig-signature" src="https://dlanka-emails.pages.dev/real-estate-agent/signature.png" alt="Signature" style="-ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 146px; display: block;" width="146" height="auto">
+                        <div class="sig-job-title" style="font-size: 9px; font-weight: bold; color: #ededee; text-transform: uppercase; letter-spacing: 2px; padding-bottom: 6px; padding-top: 6px; padding-left: 6px;">Real Estate Agent</div>
                       </td>
                     </tr>
                   </table>
                 </td>
               </tr>
 
-              <!-- Bottom: Light Panel with Contact Rows -->
+              <!-- Bottom -->
               <tr>
-                <td
-                  valign="middle"
-                  style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#ededee; height:104px; padding:10px 14px; border-collapse:collapse;"
-                  bgcolor="#ededee"
-                  height="104"
-                >
-                  <table
-                    role="presentation"
-                    cellpadding="0"
-                    cellspacing="0"
-                    border="0"
-                    width="100%"
-                    style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;"
-                  >
+                <td class="sig-bottom" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 12px; padding-bottom: 12px; padding-left: 16px; height: 54%; border-collapse: collapse;" height="54%">
+                  <table class="sig-tb-inner" cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; height: 100%; border-spacing: 0; border-collapse: collapse;" width="100%" height="100%">
                     <!-- Email -->
                     <tr>
-                      <td width="20" style="width:20px; padding:2px 0; vertical-align:middle; line-height:0;">
-                        <img
-                          src="https://dlanka-emails.pages.dev/real-estate-agent/icon-email.png"
-                          alt="Email:"
-                          width="16"
-                          height="16"
-                          style="-ms-interpolation-mode:bicubic; border:0; display:block; width:16px; height:16px;"
-                        />
+                      <td class="info-td" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; width: 16px;">
+                        <img class="sig-icon" src="https://dlanka-emails.pages.dev/real-estate-agent/icon-email.png" alt="Email Icon" style="-ms-interpolation-mode: bicubic; border: 0; line-height: 100%; outline: none; text-decoration: none; width: 16px; height: 16px; display: block;" width="16" height="16">
                       </td>
-                      <td valign="middle" style="padding:2px 0 2px 8px; vertical-align:middle; font-family:'Montserrat', Arial, sans-serif; font-size:11px; line-height:1.3;">
-                        <a href="mailto:hello@reallygreatsite.com" style="color:#1a191a; text-decoration:none; font-weight:500;">hello@reallygreatsite.com</a>
+                      <td class="info-td" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+                        <a class="sig-info-text" href="mailto:hello@reallygreatsite.com" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 11px; color: #1a191a; padding-left: 8px; text-decoration: none;">hello@reallygreatsite.com</a>
                       </td>
                     </tr>
 
                     <!-- Website -->
                     <tr>
-                      <td width="20" style="width:20px; padding:2px 0; vertical-align:middle; line-height:0;">
-                        <img
-                          src="https://dlanka-emails.pages.dev/real-estate-agent/icon-web-link.png"
-                          alt="Web:"
-                          width="16"
-                          height="16"
-                          style="-ms-interpolation-mode:bicubic; border:0; display:block; width:16px; height:16px;"
-                        />
+                      <td class="info-td" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; width: 16px;">
+                        <img class="sig-icon" src="https://dlanka-emails.pages.dev/real-estate-agent/icon-web-link.png" alt="Email Icon" style="-ms-interpolation-mode: bicubic; border: 0; line-height: 100%; outline: none; text-decoration: none; width: 16px; height: 16px; display: block;" width="16" height="16">
                       </td>
-                      <td valign="middle" style="padding:2px 0 2px 8px; vertical-align:middle; font-family:'Montserrat', Arial, sans-serif; font-size:11px; line-height:1.3;">
-                        <a href="https://www.reallygreatsite.com" target="_blank" rel="noopener noreferrer" style="color:#1a191a; text-decoration:none; font-weight:500;">www.reallygreatsite.com</a>
+                      <td class="info-td" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+                        <a class="sig-info-text" href="https://real-estate-agent.example.com" target="_blank" rel="noopener noreferrer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 11px; color: #1a191a; padding-left: 8px; text-decoration: none;">www.reallygreatsite.com </a>
                       </td>
                     </tr>
 
                     <!-- Phone -->
                     <tr>
-                      <td width="20" style="width:20px; padding:2px 0; vertical-align:middle; line-height:0;">
-                        <img
-                          src="https://dlanka-emails.pages.dev/real-estate-agent/icon-phone.png"
-                          alt="Phone:"
-                          width="16"
-                          height="16"
-                          style="-ms-interpolation-mode:bicubic; border:0; display:block; width:16px; height:16px;"
-                        />
+                      <td class="info-td" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; width: 16px;">
+                        <img class="sig-icon" src="https://dlanka-emails.pages.dev/real-estate-agent/icon-phone.png" alt="Phone Icon" style="-ms-interpolation-mode: bicubic; border: 0; line-height: 100%; outline: none; text-decoration: none; width: 16px; height: 16px; display: block;" width="16" height="16">
                       </td>
-                      <td valign="middle" style="padding:2px 0 2px 8px; vertical-align:middle; font-family:'Montserrat', Arial, sans-serif; font-size:11px; line-height:1.3;">
-                        <a href="tel:+15552345678" style="color:#1a191a; text-decoration:none; font-weight:500;">+1 (555) 234-5678</a>
+                      <td class="info-td" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+                        <a class="sig-info-text" href="tel:+1 (555) 234-5678" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 11px; color: #1a191a; padding-left: 8px; text-decoration: none;">+1 (555) 234-5678</a>
                       </td>
                     </tr>
 
                     <!-- Address -->
                     <tr>
-                      <td width="20" style="width:20px; padding:2px 0; vertical-align:middle; line-height:0;">
-                        <img
-                          src="https://dlanka-emails.pages.dev/real-estate-agent/icon-location.png"
-                          alt="Address:"
-                          width="16"
-                          height="16"
-                          style="-ms-interpolation-mode:bicubic; border:0; display:block; width:16px; height:16px;"
-                        />
+                      <td class="info-td" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; width: 16px;">
+                        <img class="sig-icon" src="https://dlanka-emails.pages.dev/real-estate-agent/icon-location.png" alt="Address Icon" style="-ms-interpolation-mode: bicubic; border: 0; line-height: 100%; outline: none; text-decoration: none; width: 16px; height: 16px; display: block;" width="16" height="16">
                       </td>
-                      <td valign="middle" style="padding:2px 0 2px 8px; vertical-align:middle; font-family:'Montserrat', Arial, sans-serif; font-size:11px; line-height:1.3;">
-                        <a href="https://maps.google.com/?q=123+Anywhere+St.,+Any+City" target="_blank" rel="noopener noreferrer" style="color:#1a191a; text-decoration:none; font-weight:500;">123 Anywhere St., Any City</a>
+                      <td class="info-td" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+                        <div class="sig-info-text" style="font-size: 11px; color: #1a191a; padding-left: 8px; text-decoration: none;">123 Anywhere St., Any City</div>
                       </td>
                     </tr>
                   </table>
@@ -201,10 +108,6 @@
     </td>
   </tr>
 </table>
-
-</body>
-</html>
-
 
 </body>
 </html>

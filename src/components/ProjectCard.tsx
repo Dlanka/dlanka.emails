@@ -146,45 +146,48 @@ const previewContent: Record<string, React.ReactNode> = {
     </div>
   ),
   'real-estate-agent': (
-    <div className="w-full max-w-[360px] mx-auto">
-      <div className="bg-[#1a191a] rounded-xl overflow-hidden shadow-2xl flex border border-slate-700/50">
+    <div className="w-full max-w-[380px] mx-auto">
+      <div
+        className="rounded-xl overflow-hidden shadow-2xl flex border border-slate-700/50"
+        style={{ background: 'linear-gradient(to bottom, #1a191a 46%, #ededee 0%)' }}
+      >
         {/* Left Photo */}
-        <div className="w-[130px] flex-shrink-0 bg-[#1a191a]">
+        <div className="w-[145px] flex-shrink-0 flex items-end justify-center pt-4">
           <img
             src="/real-estate-agent/profile.png"
             alt="Real Estate Agent"
-            className="w-full h-[160px] object-cover block"
+            className="w-[130px] h-auto object-cover block"
           />
         </div>
         {/* Right Info */}
         <div className="flex-1 flex flex-col justify-between">
-          {/* Top dark block */}
-          <div className="bg-[#1a191a] p-3 border-b border-slate-800">
+          {/* Top dark block (46%) */}
+          <div className="p-3 pl-4 flex flex-col justify-center min-h-[75px]">
             <img
               src="/real-estate-agent/signature.png"
               alt="Signature"
-              className="w-24 h-auto object-contain block mb-1"
+              className="w-28 h-auto object-contain block mb-1"
             />
-            <p className="text-[9px] font-bold text-slate-300 uppercase tracking-widest font-mono">
+            <p className="text-[9px] font-bold text-[#ededee] uppercase tracking-widest font-mono">
               Real Estate Agent
             </p>
           </div>
-          {/* Bottom light block */}
-          <div className="bg-[#ededee] p-2.5 text-left space-y-1 text-[9px] text-[#1a191a] font-medium flex-1 flex flex-col justify-center">
+          {/* Bottom light block (54%) */}
+          <div className="p-3 pl-4 text-left space-y-1 text-[9px] text-[#1a191a] font-medium flex-1 flex flex-col justify-center">
             <div className="flex items-center gap-1.5 truncate">
-              <img src="/real-estate-agent/icon-email.png" alt="Email" className="w-3 h-3 object-contain flex-shrink-0" />
+              <img src="/real-estate-agent/icon-email.png" alt="Email" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
               <span className="truncate">hello@reallygreatsite.com</span>
             </div>
             <div className="flex items-center gap-1.5 truncate">
-              <img src="/real-estate-agent/icon-web-link.png" alt="Web" className="w-3 h-3 object-contain flex-shrink-0" />
+              <img src="/real-estate-agent/icon-web-link.png" alt="Web" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
               <span className="truncate">www.reallygreatsite.com</span>
             </div>
             <div className="flex items-center gap-1.5 truncate">
-              <img src="/real-estate-agent/icon-phone.png" alt="Phone" className="w-3 h-3 object-contain flex-shrink-0" />
+              <img src="/real-estate-agent/icon-phone.png" alt="Phone" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
               <span>+1 (555) 234-5678</span>
             </div>
             <div className="flex items-center gap-1.5 truncate">
-              <img src="/real-estate-agent/icon-location.png" alt="Location" className="w-3 h-3 object-contain flex-shrink-0" />
+              <img src="/real-estate-agent/icon-location.png" alt="Location" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
               <span className="truncate">123 Anywhere St., Any City</span>
             </div>
           </div>
