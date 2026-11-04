@@ -4,6 +4,7 @@ import { OrbitFlowPreview } from './pages/OrbitFlowPreview'
 import { NorthstarPreview } from './pages/NorthstarPreview'
 import { IngoudePreview } from './pages/IngoudePreview'
 import { RealEstatePreview } from './pages/RealEstatePreview'
+import { ModernBusinessPreview } from './pages/ModernBusinessPreview'
 import { NotFound } from './pages/NotFound'
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/preview/northstar" element={<NorthstarPreview />} />
         <Route path="/preview/ingoude" element={<IngoudePreview />} />
         <Route path="/preview/real-estate" element={<RealEstatePreview />} />
+        <Route path="/preview/modern-business" element={<ModernBusinessPreview />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

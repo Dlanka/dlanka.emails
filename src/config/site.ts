@@ -80,6 +80,20 @@ export const siteConfig = {
       accentColor: "#1a191a",
       tags: ["Signature", "Real Estate", "Modern", "Retina Ready", "HTML"],
     },
+    {
+      id: "modern-business",
+      title: "Modern Business — Executive Signature",
+      category: "HTML Signature",
+      description:
+        "A warm terracotta & blush two-tier corporate email signature with circular avatar framing, " +
+        "bold typographic hierarchy, and a clean 2×2 contact grid.",
+      tech: ["HTML", "Inline CSS", "Tables", "Retina", "Email-safe"],
+      sourceFile: "src/signatures/modern-business.html",
+      distFile: "dist/signatures/modern-business.html",
+      previewPath: "/preview/modern-business",
+      accentColor: "#e56845",
+      tags: ["Signature", "Modern Business", "Corporate", "Executive", "HTML"],
+    },
   ],
 } as const;
 

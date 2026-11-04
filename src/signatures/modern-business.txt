@@ -1,0 +1,22 @@
+======================================================================
+MODERN BUSINESS — EMAIL SIGNATURE (PLAIN TEXT ALTERNATIVE)
+Sample 5 of Darshaka Lanka Email Development Portfolio
+======================================================================
+
+Samira Hadid
+Senior Manager
+
+CONTACT DETAILS:
+- Phone:    +1 (555) 000-1234
+- Email:    hello@mysample.com
+- Website:  https://www.mysample.com
+- Location: 12 Anywhere St., City, 1235
+
+======================================================================
+PRODUCTION NOTES:
+- Two-tier layout: #ffe5de blush top and #e56845 terracotta base.
+- Circular 100px avatar headshot framing.
+- Typographic hierarchy with custom horizontal rules.
+- 2x2 grid of contact details with custom hosted icons.
+- Inline CSS and table-based architecture tested for Gmail & Outlook.
+======================================================================

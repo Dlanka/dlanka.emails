@@ -93,6 +93,29 @@ const checks = [
     ],
     minBytes: 150,
   },
+  {
+    file: 'dist/signatures/modern-business.html',
+    label: 'Modern Business Signature',
+    requiredStrings: [
+      'Samira Hadid',
+      'Senior Manager',
+      'hello@mysample.com',
+      'mysample.com',
+      '000-1234',
+    ],
+    minBytes: 2000,
+  },
+  {
+    file: 'dist/signatures/modern-business.txt',
+    label: 'Modern Business Plain Text Fallback',
+    requiredStrings: [
+      'Samira Hadid',
+      'Senior Manager',
+      'hello@mysample.com',
+      'mysample.com',
+    ],
+    minBytes: 150,
+  },
 ]
 
 let passed = 0
