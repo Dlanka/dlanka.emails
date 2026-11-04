@@ -203,7 +203,7 @@ const previewContent: Record<string, React.ReactNode> = {
         <div className="bg-[#ffe5de] p-4 flex items-center gap-4">
           <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-white shadow-sm">
             <img
-              src="https://i.ibb.co/CpvhCQw0/Photo-by-Veronika-Bykovich.png"
+              src="/modern-business/Veronika%20Bykovich.png"
               alt="Samira Hadid"
               className="w-full h-full object-cover block"
             />
@@ -222,19 +222,19 @@ const previewContent: Record<string, React.ReactNode> = {
         <div className="bg-[#e56845] px-4 py-3">
           <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-[10px] text-white font-medium">
             <div className="flex items-center gap-1.5 truncate">
-              <img src="https://i.ibb.co/CppM9HRT/phone.png" alt="Phone" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
+              <img src="/modern-business/phone.png" alt="Phone" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
               <span className="truncate">+1 (555) 000-1234</span>
             </div>
             <div className="flex items-center gap-1.5 truncate">
-              <img src="https://i.ibb.co/Mx4rH3g8/Email.png" alt="Email" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
+              <img src="/modern-business/Email.png" alt="Email" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
               <span className="truncate">hello@mysample.com</span>
             </div>
             <div className="flex items-center gap-1.5 truncate">
-              <img src="https://i.ibb.co/LXHyHC0f/Web-Link.png" alt="Web" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
+              <img src="/modern-business/WebLink.png" alt="Web" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
               <span className="truncate">www.mysample.com</span>
             </div>
             <div className="flex items-center gap-1.5 truncate">
-              <img src="https://i.ibb.co/mCK72vcB/Location.png" alt="Location" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
+              <img src="/modern-business/Location.png" alt="Location" className="w-3.5 h-3.5 object-contain flex-shrink-0" />
               <span className="truncate">12 Anywhere St., City</span>
             </div>
           </div>

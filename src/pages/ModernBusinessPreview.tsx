@@ -71,7 +71,7 @@ export function ModernBusinessPreview() {
               Browser Preview
             </h2>
             <p className="text-xs text-orange-400 bg-orange-400/10 border border-orange-400/20 px-3 py-1.5 rounded-full">
-              ✓ Uses production HTTPS-hosted assets
+              ✓ Uses production HTTPS-hosted assets from public/modern-business
             </p>
           </div>
 
@@ -126,7 +126,7 @@ export function ModernBusinessPreview() {
                 <div className="flex gap-3"><span className="text-slate-500">Source:</span><span className="text-orange-300">src/signatures/modern-business.html</span></div>
                 <div className="flex gap-3"><span className="text-slate-500">Dist:</span><span className="text-orange-300">dist/signatures/modern-business.html</span></div>
                 <div className="flex gap-3"><span className="text-slate-500">Plain text:</span><span className="text-orange-300">dist/signatures/modern-business.txt</span></div>
-                <div className="flex gap-3"><span className="text-slate-500">Assets:</span><span className="text-orange-300">HTTPS Hosted (Direct CDN)</span></div>
+                <div className="flex gap-3"><span className="text-slate-500">Assets folder:</span><span className="text-orange-300">public/modern-business/</span></div>
               </div>
             </div>
           </div>
@@ -137,3 +137,4 @@ export function ModernBusinessPreview() {
     </div>
   )
 }
+
